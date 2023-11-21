@@ -177,6 +177,7 @@
 							>Named Entity Recognition and Classification with Scikit-Learn</a
 						>
 					</blockquote>
+					<!-- 固有表現抽出 -->
 				</section>
 
 				<section>
@@ -217,14 +218,17 @@
 						<li>Fraud Detection</li>
 						<li>Network Intrusion Detection</li>
 					</ul>
+					<!-- 異常検知 -->
 				</section>
 				<section>
 					<h3>Fraud Detection</h3>
 					<p>Identifying fraudulent activities in financial transactions.</p>
+					<!-- 不正検知(詐欺対策など) -->
 				</section>
 				<section>
 					<h3>Network Intrusion Detection</h3>
 					<p>Detecting malicious activities in network traffic.</p>
+					<!-- 侵入検知システム -->
 				</section>
 
 				<section>
@@ -244,66 +248,111 @@
 				<section>
 					<h3>Linear Regression</h3>
 					<blockquote>
-						<img src="https://paulvanderlaken.files.wordpress.com/2020/01/ezgif.com-video-to-gif-1.gif" />
+						<img src="https://paulvanderlaken.files.wordpress.com/2020/01/ezgif.com-video-to-gif-1.gif" height="500rem" />
 						<a
 							href="https://paulvanderlaken.com/2020/01/20/animated-machine-learning-classifiers/"
 							>Animated Machine Learning Classifiers</a>
 					</blockquote>
+					<!-- 線形回帰 -->
+					<!-- データのポイント間の関係を直線で表し、予測やトレンドを理解する方法です（例：気温とアイスクリームの売り上げの関係）。 -->
 				</section>
 				<section>
 					<h3>Logistic Regression</h3>
 					<blockquote>
-						<img src="https://editor.analyticsvidhya.com/uploads/450101_2KAInY20QPhkLCJ8jWVLJw.gif" />
+						<img src="https://editor.analyticsvidhya.com/uploads/450101_2KAInY20QPhkLCJ8jWVLJw.gif" height="500rem" />
 						<a
 							href="https://www.analyticsvidhya.com/blog/2021/10/building-an-end-to-end-logistic-regression-model/"
 							>Building an End-to-End Logistic Regression Model</a>
 					</blockquote>
+					<!-- ロジスティック回帰 -->
+					<!-- ある事象が起こるかどうか（例えば「はい」か「いいえ」）を予測するために使われる方法で、結果は0から1の間の確率で表されます（例：メールがスパムかどうかを判断する -->
 				</section>
 				<section>
 					<h3>Decision Tree</h3>
 					<blockquote>
-						<img src="https://paulvanderlaken.files.wordpress.com/2020/01/tree.gif" />
-						<a
-							href="https://paulvanderlaken.com/2020/01/20/animated-machine-learning-classifiers/"
-							>Animated Machine Learning Classifiers</a>
-				</section>
-				<section>
-					<h3>SVM (Support Vector Machine)</h3>
-					<blockquote>
-						<img src="https://paulvanderlaken.files.wordpress.com/2020/01/svm.gif" />
+						<img src="https://paulvanderlaken.files.wordpress.com/2020/01/tree.gif" height="500rem" />
 						<a
 							href="https://paulvanderlaken.com/2020/01/20/animated-machine-learning-classifiers/"
 							>Animated Machine Learning Classifiers</a>
 					</blockquote>
+				</section>
+				<section>
+					<h3>SVM (Support Vector Machine)</h3>
+					<blockquote>
+						<img src="https://paulvanderlaken.files.wordpress.com/2020/01/svm.gif" height="500rem" />
+						<a
+							href="https://paulvanderlaken.com/2020/01/20/animated-machine-learning-classifiers/"
+							>Animated Machine Learning Classifiers</a>
+					</blockquote>
+					<!-- SVMはデータを分類するために、データポイントの間に最も良い「境界線」を引きます。
+						しかし、実際のデータはいつもきれいに直線で分けられるわけではありません。
+						イメージですが、xを横軸、x^2の縦軸にすると
+						y
+						↑	-------------------
+						|	-------------------
+						|	-A-A---B-B--A-A---- 
+						|	-------------------
+						|	-------------------
+						---------------------→ x
+						のようなデータが
+						x^2
+						↑
+						| --------------A---
+						| ------------------
+						| ------------------
+						| ------------A-----
+						| ------------------
+						| ------------------
+						| ------------------
+						| ---------B--------
+						|	-------B----------
+						| ---A--------------
+						|	-A----------------
+						---------------------→ x
+						のように線形で分類できるようになる。
+					-->
 				</section>
 				<section>
 					<h3>Naive Bayes Algorithm</h3>
 					\[\begin{aligned}
 						P(A|B) &= \frac{P(B|A)P(A)}{P(B)}
 					\end{aligned}\]
+					<!-- Bが起こったときにAが起こる確率 -->
+					<!-- P(A)は「Aが起こる確率」で、これは最初に持っている情報や信念に基づきます。 -->
+					<!--P(B∣A)は「Aが起こったときにBが起こる確率」で、新しい証拠やデータがどのようにAに関連しているかを示します。-->
+					<!--P(B)は「Bが起こる確率」で、全体の文脈や可能性を表します。-->
+					<!--
+						ベイズ統計を用いたスパムメール分類は、メールに含まれる特定の単語やフレーズの出現頻度に基づいて、
+						メールがスパムである可能性を計算します。各単語がスパムメールにどれだけ特有かを分析し、
+						これらの情報を組み合わせることで、メールの全体的な内容を考慮した上で、スパムか否かをより正確に判断できます。
+						新しい種類のスパムメールが現れた場合でも、既存のデータから学習し、分類の精度を継続的に向上させることが可能です。
+						このような特徴が、ベイズ統計によるスパムメール分類の精度を高めています。
+					-->
 				</section>
 				<section>
 					<h3>KNN (K-Nearest Neighbors) Algorithm</h3>
 					<blockquote>
-						<img src="https://paulvanderlaken.files.wordpress.com/2020/01/knn.gif" />
+						<img src="https://paulvanderlaken.files.wordpress.com/2020/01/knn.gif" height="500rem" />
 						<a
 							href="https://paulvanderlaken.com/2020/01/20/animated-machine-learning-classifiers/"
 							>Animated Machine Learning Classifiers</a>
 					</blockquote>
+					<!-- 教師あり学習 -->
 				</section>
 				<section>
 					<h3>K-Means</h3>
 					<blockquote>
-						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/K-means_convergence.gif/617px-K-means_convergence.gif" />
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/K-means_convergence.gif/617px-K-means_convergence.gif" height="550rem" />
 						<a
 							href="https://en.m.wikipedia.org/wiki/File:K-means_convergence.gif"
 							>File:K-means convergence.gif</a>
 					</blockquote>
+					<!-- 教師なし学習 -->
 				</section>
 				<section>
 					<h3>Random Forest Algorithm</h3>
 					<blockquote>
-						<img src="https://paulvanderlaken.files.wordpress.com/2020/01/randomforest.gif" />
+						<img src="https://paulvanderlaken.files.wordpress.com/2020/01/randomforest.gif" height="500rem" />
 						<a
 							href="https://paulvanderlaken.com/2020/01/20/animated-machine-learning-classifiers/"
 							>Animated Machine Learning Classifiers</a>
@@ -312,7 +361,7 @@
 				<section>
 					<h3>Gradient Boosting</h3>
 					<blockquote>
-						<img src="https://paulvanderlaken.files.wordpress.com/2020/01/xgboost.gif" />
+						<img src="https://paulvanderlaken.files.wordpress.com/2020/01/xgboost.gif" height="500rem" />
 						<a
 							href="https://paulvanderlaken.com/2020/01/20/animated-machine-learning-classifiers/"
 							>Animated Machine Learning Classifiers</a>
@@ -330,10 +379,10 @@
 				<section>
 					<h3>Descriptive Statistics</h3>
 					<pre><code>
-							df.describe()
-							#        count       mean       std  min   25%   50%   75%   max
-							# var1  1000.0  12.542000  6.735307  0.0  8.00  12.0  18.0  24.0
-							# var2  1000.0   0.255000  0.435941  0.0  0.00   0.0   1.0   1.0
+df.describe()
+#        count       mean       std  min   25%   50%   75%   max
+# var1  1000.0  12.542000  6.735307  0.0  8.00  12.0  18.0  24.0
+# var2  1000.0   0.255000  0.435941  0.0  0.00   0.0   1.0   1.0
 					</code></pre>
 				</section>
 				<section>
@@ -439,6 +488,7 @@
 					<h3>Normalization and Scaling</h3>
 					<pre><code>
 from sklearn.preprocessing import MinMaxScaler, StandardScaler
+
 scaler = MinMaxScaler()  # or StandardScaler()
 df_scaled = scaler.fit_transform(df)
 					</code></pre>
@@ -473,9 +523,12 @@ df['categorical_column'] = df['categorical_column'].astype('category').cat.codes
 					<h3>Dimensionality Reduction</h3>
 					<pre><code>
 						from sklearn.decomposition import PCA
+						
 						pca = PCA(n_components=k)
 						df_reduced = pca.fit_transform(df)
 					</code></pre>
+					<!-- Principal Component Analysis -->
+					<!-- 次元削減の1つの主成分分析 -->
 				</section>
 
 				<!-- Validation -->
@@ -486,6 +539,7 @@ df['categorical_column'] = df['categorical_column'].astype('category').cat.codes
 					<h3>Hold-Out Validation</h3>
 					<pre><code>
 						from sklearn.model_selection import train_test_split
+						
 						X_train, X_test, y_train, y_test = train_test_split(df.drop('target', axis=1), df['target'], test_size=0.2)
 					</code></pre>
 				</section>
@@ -494,18 +548,22 @@ df['categorical_column'] = df['categorical_column'].astype('category').cat.codes
 					<h3>K-Fold Cross-Validation</h3>
 					<pre><code>
 						from sklearn.model_selection import cross_val_score, KFold
+						
 						kf = KFold(n_splits=5)
 						scores = cross_val_score(model, X, y, cv=kf)
 					</code></pre>
+					<!-- We can train 5 models. -->
 				</section>
 				
 				<section>
 					<h3>Stratified K-Fold Cross-Validation</h3>
 					<pre><code>
 						from sklearn.model_selection import StratifiedKFold
+
 						skf = StratifiedKFold(n_splits=5)
 						scores = cross_val_score(model, X, y, cv=skf)
 					</code></pre>
+					<!-- Split 5 by keeping data distributed -->
 				</section>
 
 				<!-- Metrics Optimization -->
@@ -516,6 +574,7 @@ df['categorical_column'] = df['categorical_column'].astype('category').cat.codes
 					<h3>Accuracy</h3>
 					<pre><code>
 						from sklearn.metrics import accuracy_score
+
 						accuracy = accuracy_score(y_true, y_pred)
 					</code></pre>
 				</section>
@@ -523,10 +582,11 @@ df['categorical_column'] = df['categorical_column'].astype('category').cat.codes
 				<section>
 					<h3>Precision, Recall, and F1 Score</h3>
 					<pre><code>
-						from sklearn.metrics import precision_score, recall_score, f1_score
-						precision = precision_score(y_true, y_pred)
-						recall = recall_score(y_true, y_pred)
-						f1 = f1_score(y_true, y_pred)
+from sklearn.metrics import precision_score, recall_score, f1_score
+
+precision = precision_score(y_true, y_pred)
+recall = recall_score(y_true, y_pred)
+f1 = f1_score(y_true, y_pred)
 					</code></pre>
 
 					<!-- 偽陽性(False Positive)を減らしたかったら適合率（precision) -->
@@ -538,33 +598,40 @@ df['categorical_column'] = df['categorical_column'].astype('category').cat.codes
 				<section>
 						<h3>ROC-AUC Score</h3>
 						<pre><code>
-								from sklearn.metrics import roc_auc_score
-								roc_auc = roc_auc_score(y_true, y_scores)
+from sklearn.metrics import roc_auc_score
+
+roc_auc = roc_auc_score(y_true, y_scores)
 						</code></pre>
 				</section>
 				
 				<section>
-						<h3>Mean Squared Error (MSE) and Root Mean Squared Error (RMSE)</h3>
+						<h3>MSE and RMSE</h3>
 						<pre><code>
-								from sklearn.metrics import mean_squared_error
-								mse = mean_squared_error(y_true, y_pred)
-								rmse = mean_squared_error(y_true, y_pred, squared=False)
+from sklearn.metrics import mean_squared_error
+
+mse = mean_squared_error(y_true, y_pred)
+rmse = mean_squared_error(y_true, y_pred, squared=False)
 						</code></pre>
+						<!-- Mean Squared Error (平均二乗誤差)：大きな誤差をより厳しく扱います。 -->
+						<!-- Root Mean Squared Error(二乗平均平方根誤差)： 元のデータと同じ単位で誤差を評価できます。 -->
 				</section>
 				
 				<section>
 						<h3>Mean Absolute Error (MAE)</h3>
 						<pre><code>
-								from sklearn.metrics import mean_absolute_error
-								mae = mean_absolute_error(y_true, y_pred)
+from sklearn.metrics import mean_absolute_error
+
+mae = mean_absolute_error(y_true, y_pred)
 						</code></pre>
+						<!-- 平均絶対誤差: 差の絶対値をとることで、誤差の大きさを考慮せず、公平に評価する。 -->
 				</section>
 				
 				<section>
 						<h3>Log Loss</h3>
 						<pre><code>
-								from sklearn.metrics import log_loss
-								logloss = log_loss(y_true, y_pred_probs)
+from sklearn.metrics import log_loss
+
+logloss = log_loss(y_true, y_pred_probs)
 						</code></pre>
 				</section>
 
@@ -575,25 +642,26 @@ df['categorical_column'] = df['categorical_column'].astype('category').cat.codes
 				<section>
 					<h3>Averaging</h3>
 					<pre><code>
-							predictions = (model1.predict(X_test) + model2.predict(X_test) + model3.predict(X_test)) / 3
+predictions = (model1.predict(X_test) + model2.predict(X_test) + model3.predict(X_test)) / 3
 					</code></pre>
 				</section>
 				
 				<section>
 					<h3>Weighted Averaging</h3>
 					<pre><code>
-						weights = [0.3, 0.4, 0.3]
-						predictions = weights[0]*model1.predict(X_test) + weights[1]*model2.predict(X_test) + weights[2]*model3.predict(X_test)
+weights = [0.3, 0.4, 0.3]
+predictions = weights[0]*model1.predict(X_test) + weights[1]*model2.predict(X_test) + weights[2]*model3.predict(X_test)
 					</code></pre>
 				</section>
 				
 				<section>
 					<h3>Bagging</h3>
 					<pre><code>
-						from sklearn.ensemble import BaggingClassifier
-						bagging_model = BaggingClassifier(base_estimator=DecisionTreeClassifier(), n_estimators=100)
-						bagging_model.fit(X_train, y_train)
-						predictions = bagging_model.predict(X_test)
+from sklearn.ensemble import BaggingClassifier
+
+bagging_model = BaggingClassifier(base_estimator=DecisionTreeClassifier(), n_estimators=100)
+bagging_model.fit(X_train, y_train)
+predictions = bagging_model.predict(X_test)
 					</code></pre>
 					<!-- 同じモデルを、違うサンプル数で並列に学習させたあと、その結果の平均を取る。 -->
 				</section>
@@ -601,10 +669,11 @@ df['categorical_column'] = df['categorical_column'].astype('category').cat.codes
 				<section>
 					<h3>Boosting</h3>
 					<pre><code>
-						from sklearn.ensemble import GradientBoostingClassifier
-						boosting_model = GradientBoostingClassifier(n_estimators=100)
-						boosting_model.fit(X_train, y_train)
-						predictions = boosting_model.predict(X_test)
+from sklearn.ensemble import GradientBoostingClassifier
+
+boosting_model = GradientBoostingClassifier(n_estimators=100)
+boosting_model.fit(X_train, y_train)
+predictions = boosting_model.predict(X_test)
 					</code></pre>
 					<!-- 直列のように学習したモデルを更に学習して、10 stepsのモデルの結果 と 20 steps のモデルの結果の平均を取る。 -->
 				</section>
@@ -612,15 +681,16 @@ df['categorical_column'] = df['categorical_column'].astype('category').cat.codes
 				<section>
 					<h3>Stacking</h3>
 					<pre><code>
-						from sklearn.ensemble import StackingClassifier
-						from sklearn.linear_model import LogisticRegression
-						estimators = [
-								('rf', RandomForestClassifier(n_estimators=10, random_state=42)),
-								('svr', make_pipeline(StandardScaler(), LinearSVC(random_state=42)))
-						]
-						stacking_model = StackingClassifier(estimators=estimators, final_estimator=LogisticRegression())
-						stacking_model.fit(X_train, y_train)
-						predictions = stacking_model.predict(X_test)
+from sklearn.ensemble import StackingClassifier
+from sklearn.linear_model import LogisticRegression
+
+estimators = [
+	('rf', RandomForestClassifier(n_estimators=10, random_state=42)),
+	('svr', make_pipeline(StandardScaler(), LinearSVC(random_state=42)))
+]
+stacking_model = StackingClassifier(estimators=estimators, final_estimator=LogisticRegression())
+stacking_model.fit(X_train, y_train)
+predictions = stacking_model.predict(X_test)
 					</code></pre>
 					<!-- 違うモデルの予測結果を入力にモデルを学習する -->
 				</section>
