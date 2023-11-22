@@ -25,17 +25,30 @@
 				</section>
 
 				<section>
-					<h3>Tasks</h3>
+					<h3>Table of Contents</h3>
 					<ul>
-						<li>Tabular Data</li>
-						<li>Computer Vision</li>
-						<li>Natural Language Processing (NLP)</li>
-						<li>Reinforcement Learning</li>
-						<li>Anomaly Detection</li>
+						<li><a href="#/tasks">Tasks</a></li>
+						<li><a href="#/machine-learning-algorithms">Machine Learning Algorithms</a></li>
+						<li><a href="#/eda">Exploratory Data Analysis (EDA)</a></li>
+						<li><a href="#/data-preprocessing">Data Preprocessing</a></li>
+						<li><a href="#/validation">Validation</a></li>
+						<li><a href="#/metrics-optimization">Metrics Optimization</a></li>
+						<li><a href="#/ensembling">Ensembling</a></li>
 					</ul>
 				</section>
 
-				<section>
+				<section id="tasks">
+					<h3>Tasks</h3>
+					<ul>
+						<li><a href="#/tabular-data">Tabular Data</a></li>
+						<li><a href="#/computer-vision">Computer Vision</a></li>
+						<li><a href="#/natural-language-processing-nlp">Natural Language Processing (NLP)</a></li>
+						<li><a href="#/reinforcement-learning">Reinforcement Learning</a></li>
+						<li><a href="#/anomaly-detection">Anomaly Detection</a></li>
+					</ul>
+				</section>
+
+				<section id="tabular-data">
 					<h3>Tabular Data</h3>
 					<ul>
 						<li>Regression Tasks</li>
@@ -65,7 +78,7 @@
 					</p>
 				</section>
 
-				<section>
+				<section id="computer-vision">
 					<h3>Computer Vision</h3>
 					<ul>
 						<li>Image Classification</li>
@@ -124,7 +137,7 @@
 					</blockquote>
 				</section>
 
-				<section>
+				<section id="natural-language-processing-nlp">
 					<h3>Natural Language Processing (NLP)</h3>
 					<ul>
 						<li>Sentiment Analysis</li>
@@ -180,7 +193,7 @@
 					<!-- 固有表現抽出 -->
 				</section>
 
-				<section>
+				<section id="reinforcement-learning">
 					<h3>Reinforcement Learning</h3>
 					<ul>
 						<li>Game AI</li>
@@ -212,7 +225,7 @@
 					</blockquote>
 				</section>
 
-				<section>
+				<section id="anomaly-detection">
 					<h3>Anomaly Detection</h3>
 					<ul>
 						<li>Fraud Detection</li>
@@ -231,10 +244,10 @@
 					<!-- 侵入検知システム -->
 				</section>
 
-				<section>
+				<section id="machine-learning-algorithms">
 					<h3>Machine Learning Algorithms</h3>
 					<ul>
-						<li>Linear Regression</li>
+						<li>Liner Regression</li>
 						<li>Logistic Regression</li>
 						<li>Decision Tree</li>
 						<li>SVM (Support Vector Machine)</li>
@@ -253,8 +266,9 @@
 							href="https://paulvanderlaken.com/2020/01/20/animated-machine-learning-classifiers/"
 							>Animated Machine Learning Classifiers</a>
 					</blockquote>
-					<!-- 線形回帰 -->
-					<!-- データのポイント間の関係を直線で表し、予測やトレンドを理解する方法です（例：気温とアイスクリームの売り上げの関係）。 -->
+					<!-- 回帰問題に用いられる -->
+					<!-- KaggleではRidge Regressionが使われることが多い。 -->
+					<!-- from sklearn.linear_model import Ridge -->
 				</section>
 				<section>
 					<h3>Logistic Regression</h3>
@@ -264,9 +278,9 @@
 							href="https://www.analyticsvidhya.com/blog/2021/10/building-an-end-to-end-logistic-regression-model/"
 							>Building an End-to-End Logistic Regression Model</a>
 					</blockquote>
-					<!-- ロジスティック回帰 -->
-					<!-- ある事象が起こるかどうか（例えば「はい」か「いいえ」）を予測するために使われる方法で、結果は0から1の間の確率で表されます（例：メールがスパムかどうかを判断する -->
+					<!-- 分類問題に用いられる。 -->
 				</section>
+
 				<section>
 					<h3>Decision Tree</h3>
 					<blockquote>
@@ -369,7 +383,7 @@
 				</section>
 
 				<!-- Exploratory Data Analysis (EDA) -->
-				<section>
+				<section id="eda">
 					<h3>Exploratory Data Analysis (EDA)</h3>
 				</section>
 				<section>
@@ -456,7 +470,7 @@ df.describe()
 
 
 				<!-- Data Preprocessing -->
-				<section>
+				<section id="data-preprocessing">
 					<h3>Data Preprocessing</h3>
 				</section>
 				<section>
@@ -532,7 +546,7 @@ df['categorical_column'] = df['categorical_column'].astype('category').cat.codes
 				</section>
 
 				<!-- Validation -->
-				<section>
+				<section id="validation">
 					<h3>Validation</h3>
 				</section>
 				<section>
@@ -567,7 +581,7 @@ df['categorical_column'] = df['categorical_column'].astype('category').cat.codes
 				</section>
 
 				<!-- Metrics Optimization -->
-				<section>
+				<section id="metrics-optimization">
 					<h3>Metrics Optimization</h3>
 				</section>
 				<section>
@@ -636,7 +650,7 @@ logloss = log_loss(y_true, y_pred_probs)
 				</section>
 
 				<!-- Ensembling -->
-				<section>
+				<section id="ensembling">
 					<h3>Ensembling</h3>
 				</section>
 				<section>

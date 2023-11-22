@@ -1,6 +1,10 @@
 # ML Introduction Slides
 By using revealjs, I made a presentation slide.
 
+## [Slide Link](https://masaishi.github.io/ml-intro-reveal/)
+
+<br />
+<br />
 <br />
 
 <p align="center">
